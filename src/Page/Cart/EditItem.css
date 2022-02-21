@@ -1,0 +1,26 @@
+.edit{
+    display: flex;
+}
+
+.shopping_info{
+    margin: 20px 0;
+}
+.image{
+    margin: 20px 0;
+}
+.add >h1{
+    font-size: 16px;
+    color: #0f0f0f;
+}
+.add >p{
+    font-size: 14px;
+    color: dimgray;
+    font-weight: 400;
+}
+.add>h4 {
+    margin-bottom: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #0f0f0f;
+}
+

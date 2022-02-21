@@ -1,0 +1,125 @@
+.your_cart >h5{
+    text-align: center;
+    font-size: 24px;
+    color: #0f0f0f;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: 500;
+    margin-bottom: 39px;
+}
+.cart_detail{
+    display: flex;
+}
+
+.cart_product{
+    -ms-flex: 1;  /* IE 10 */
+    flex: 2;
+    margin-right:9%;
+    margin-left: 15%;
+}
+.cart_oder{
+    -ms-flex: 1;  /* IE 10 */
+    flex: 1;
+    margin-right: 10%;
+}
+.title_product{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .05em;
+    margin-bottom: 0;
+    padding: 12px 20px;
+    color: #0f0f0f;
+    background: #f8f8f8;
+}
+.title_oder{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .05em;
+    margin-bottom: 0;
+    padding: 12px 20px;
+    color: #0f0f0f;
+    background: #f8f8f8;
+    text-align: center;
+}
+.edit_update >Button{
+    margin-left: 5px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: 14px;
+    line-height: 20px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    padding:7px 12px 7px;
+}
+.yogurt_input_container{
+    height: 30px;
+    width: calc(100% - 100px);
+    font-size: inherit;
+    padding: 3px 0;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #737373;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.yogurt_submit_container{
+    height: 38px;
+    width: 86px;
+    min-width: 86px;
+    font-size: inherit;
+    appearance: none;
+    border: 1px solid #000000;
+    border-radius: 0;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 4px 7px;
+}
+.coupon{
+    margin:20px 0;
+}
+
+.payment>span{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.75em;
+    line-height: 1.3em;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #5f5f5f;
+}
+.note{
+    display: flex;
+}
+.note>h5{
+    background-color: gray;
+    color: white;
+    padding: 1px 4px;
+}
+.note >h6{
+    margin-left: 10px;
+    color: gray;
+}
+.payment >input{
+    width: 90%;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 10px;
+    border-radius: 1px;
+    margin-bottom: 45px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .05em;
+    cursor: pointer;
+    background: #b20000;
+    color: #fff;
+    border: none;
+}
+
+

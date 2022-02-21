@@ -1,0 +1,105 @@
+.content{
+    text-align: center;
+}
+
+.content_news{
+    width: 100%;
+    text-align: center;
+}
+
+.content_new{
+    margin-top: 30px;
+}
+
+.content_news > img{
+    width: 100%;
+}
+
+.content_title >span{
+    font-size: x-large;
+    font-weight: normal;
+}
+
+.slick-dost{
+    padding: 0;
+    margin: 25px 0 0 0;
+    text-align: center;
+    letter-spacing: -.33em;
+    line-height: 0;
+}
+
+.slick-dost > li{
+    display: inline-block;
+    font-size: 0;
+    margin: 0 7px;
+    width: 12px;
+    height: 12px;
+    letter-spacing: normal;
+}
+.select:after,:before{
+    box-sizing: border-box;
+    background: black;
+    font-weight: bold;
+}
+
+.content_items > Button{
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    border-color:black;
+    font-size: small;
+    font-weight: bolder;
+    padding: 10px 60px 10px 60px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.content_items> Button:hover{
+    background-color: white;
+    color: black;
+}
+
+.signUp{
+    background-image: url(https://cdn.shopify.com/s/files/1/0477/6699/5109/files/20210616163936_2048x.png?v=1628569241);
+    margin: 20px 0 20px 0;
+}
+.form_signup{
+    color: white;
+    padding: 160px 0 165px 0;
+    font-size: xx-large;
+}
+.input_container{
+    padding: 7px 15px;
+    height: 30px;
+    width: 400px;
+    text-align: center;
+    margin-right: 10px;
+}
+.submit_container{
+    font-family: Poppins, serif;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: 14px;
+    line-height: 20px;
+    outline: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #0f0f0f;
+    color: #ffffff;
+    border: 1px solid #0f0f0f;
+    padding: 13px 30px 15px;
+    font-weight: bold;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+
+.icons >svg{
+    margin-right: 20px;
+}
+.icons>svg :hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+
+

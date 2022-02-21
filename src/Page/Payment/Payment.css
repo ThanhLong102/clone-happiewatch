@@ -1,0 +1,88 @@
+.payments{
+    display: flex;
+}
+.payment_info{
+    color: black;
+    margin-left:20% ;
+    margin-right: 5%;
+}
+.payment_item{
+    background: #f8f9fa;
+    width: 50%;
+    margin-left: 8px;
+    border-left:1px solid lightgray ;
+}
+.payment_item>hr{
+    width: 40%;
+}
+.contact_information >p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.input_info>p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.payment_with{
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px 20px 10px;
+    border: 0.001cm solid lightgray ;
+    border-radius: 6px !important;
+}
+.payment_with_paypal{
+    display: flex;
+    background-color: #ffc439;
+    padding: 0px 80px 0px 80px;
+    font-size: smaller;
+    border-radius: 5px !important;
+}
+
+.payment_with_gpay{
+    display: flex;
+    background-color: black;
+    padding: 0 50px 0 50px;
+    font-size: smaller;
+    border-radius: 5px !important;
+}
+.checkboxEmail{
+    margin-bottom: 50px;
+}
+.checkboxEmail>span{
+    font-size: 14px;
+    color: lightgray;
+    margin-left: 5px;
+}
+.inputs{
+    font-size: 12px;
+    padding: 3px 200px 20px 10px;
+    border-radius: 5px !important;
+    border: 0.01cm solid lightgray;
+    margin-bottom: 10px;
+}
+.Buy{
+    color: white;
+    font-weight: 800;
+    background-color: black;
+    padding: 17px 60px;
+    border: 1px solid black;
+    border-radius: 4px !important;
+    cursor: pointer;
+}
+.line_or{
+    text-align: center;
+    font-weight: bold;
+}
+.cart_items{
+    margin-top: 40px;
+}
+.cart_total1{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 70px;
+}
+.cart_total1_content{
+    margin-right: 53%;
+}

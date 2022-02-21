@@ -1,0 +1,25 @@
+.form_login_message{
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.form_login_l{
+    line-height: 0.4cm;
+}
+.form_login_input{
+    margin-top: 20px;
+}
+.form_login_submit_s{
+    text-align: center;
+}
+.form_login_submit{
+    font-weight: 700;
+    padding: 12px 40%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.form_login_submit:hover{
+    background-color: gray;
+    color: white;
+}

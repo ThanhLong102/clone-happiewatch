@@ -1,0 +1,23 @@
+.search{
+    position: fixed;
+    top: 70px;
+    height: 100%;
+    width: 25%;
+    z-index: 100;
+    background: #f8f9fa;
+    margin-left: 75%;
+}
+
+.search_byTitle{
+    margin-top: 15px;
+    display: flex;
+}
+
+
+.products{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}

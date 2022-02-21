@@ -1,0 +1,18 @@
+.item_search{
+    font-size: 10px;
+    font-family: Poppins,Arial,sans-serif;
+    line-height: 9px;
+    letter-spacing: .01em;
+    margin-bottom:20px ;
+}
+.item_search >p{
+    color: gray;
+}
+
+.item_search > h4{
+    color: black;
+}
+
+.item_search > img{
+    height: 200px;
+}

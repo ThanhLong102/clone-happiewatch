@@ -1,0 +1,106 @@
+.shopping_info{
+    display: flex;
+    font-family: Poppins, serif;
+
+}
+.add{
+    margin-top: 40px;
+    margin-left: 5%;
+}
+.add_material{
+    display: flex;
+    flex-flow: row wrap;
+    line-height: 34px;
+}
+
+.add_material_i{
+    margin-right:10px !important;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #0f0f0f;
+    cursor: pointer;
+    border: 2px solid #e3e3e3;
+}
+
+.quantity >button{
+    width: 40px;
+    padding: 11px 5px 9px;
+    border: 1px solid #cbcbcb;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.quantity >input{
+    width: 70px;
+    color: #5f5f5f;
+    padding: 11px 5px 9px;
+    text-align: center;
+    border: 1px solid #cbcbcb;
+}
+
+.payment{
+    text-align: center;
+}
+
+.add> Button{
+    background: black;
+    color: gray;
+    border-color:black;
+    font-size: small;
+    font-weight: bolder;
+    padding: 10px 300px 10px 300px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.content_items3>Button{
+    background: black;
+    color: gray;
+    border-color:black;
+    font-size: small;
+    font-weight: bolder;
+    padding: 10px 280px 10px 300px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin-bottom: 10px;
+}
+
+.flex{
+    padding-top: 50px;
+    display: flex;
+    background-color: #f8f9fa;
+    padding-bottom: 70px;
+}
+
+.flex >div{
+    -ms-flex: 1;  /* IE 10 */
+    flex: 1;
+}
+
+.Features{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.Features > h2{
+    color: #5f5f5f;
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-family: Poppins,Arial,sans-serif;
+    line-height: 22px;
+    letter-spacing: .02em;
+}
+
+.Features >p{
+    color: gray;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.add>h2{
+    font-size: 16px;
+}
+.payment>p{
+    margin-right: 10px;
+}
