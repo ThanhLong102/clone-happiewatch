@@ -86,7 +86,7 @@ function Collection({Type}) {
             <div className="products">
                 {
                     productSorted.map((product) =>{
-                            return(<Link to={ `collection/${ product.id }`} style={{textDecoration: 'none' }}>
+                            return(<Link to={ `/collection/${ product.id }`} style={{textDecoration: 'none' }}>
                                 <Product key={product.id}
                                          image={product.detail[product.id%4].image}
                                          name={product.name}

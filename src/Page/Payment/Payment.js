@@ -51,7 +51,8 @@ function Payment({items,user}) {
 
                     let raw = JSON.stringify({
                         "quantity": item.quantity,
-                        "itemId": item.id,
+                        "name": item.name,
+                        "material":item.material,
                         "code": code,
                     });
                     const requestOptions = {
@@ -97,8 +98,6 @@ function Payment({items,user}) {
             alert("dat hang thanh cong")
         }
     }
-
-
 
     const change =(e) =>{
         setData({

@@ -65,7 +65,7 @@ function Upload() {
 
     return (
         <div className="upload_product">
-            <h1>Upload & Update Product </h1>
+            <h1>Upload Product </h1>
             <div className="form" >
                 <div className="form_name">
                     <p>Name Product:</p>

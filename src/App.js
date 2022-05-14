@@ -13,7 +13,10 @@ import Upload from "./Page/Upload/Upload";
 import Login from "./Page/Login/Login";
 import Blog from "./Page/Blog/Blog";
 import Payment from "./Page/Payment/Payment";
-
+import Order from "./Admin/Order/Order";
+import Admin from "./Admin/Admin";
+import ItemQl from "./Admin/Item/ItemQl";
+import UpdateItem from "./Admin/Item/UpdateItem";
 
 function App() {
     const [cart,setCart] =useState([]);
@@ -92,7 +95,7 @@ function App() {
     const totalQuantity=getTotalQuantity();
 
     const [displayCart,setDisplayCart] = useState(false);
-    const [displayLogin,setDisplayLogin] = useState(true);
+    const [displayLogin,setDisplayLogin] = useState(false);
 
     const handleDisplayCart = () => setDisplayCart(!displayCart);
     const handleDisplay = () => {
@@ -108,9 +111,15 @@ function App() {
     }
 
     const [displaySearch,setDisplaySearch] = useState(false);
+    const [displayMenu,setDisplayMenu] = useState(false);
 
     const handleDisplaySearch = () => setDisplaySearch(!displaySearch);
     const handleDisplayLogin = () => setDisplayLogin(!displayLogin);
+    const handleDisplayMenu = () => {
+        if(user.username === "admin" && user.password === "admin"){
+            setDisplayMenu(!displayMenu);
+        }
+    }
 
     const changeQuantity = (yourChangeQuantity) => {
         console.log(yourChangeQuantity)
@@ -152,6 +161,7 @@ function App() {
                         handleDisplaySearch={handleDisplaySearch}
                         handleDisplayLogin={handleDisplayLogin}
                         handleDisplayLogout={handleDisplayLogout}
+                        handleDisplayMenu={handleDisplayMenu}
                         totalItems={totalQuantity}
                         login={login}
                 />
@@ -171,6 +181,10 @@ function App() {
                 }
                 {
                     displaySearch && <Search
+                    />
+                }
+                {
+                    displayMenu && <Admin
                     />
                 }
                 <Switch>
@@ -203,7 +217,31 @@ function App() {
                         <Blog/>
                     </Route>
                     <Route
-                        path="/upload"
+                        path="/admin"
+                        exact
+                    >
+                        <Admin/>
+                    </Route>
+                    <Route
+                        path="/admin/order"
+                        exact
+                    >
+                        <Order/>
+                    </Route>
+                    <Route
+                        path="/admin/item"
+                        exact
+                    >
+                        <ItemQl/>
+                    </Route>
+                    <Route
+                        path="/admin/item/:id"
+                        exact
+                    >
+                        <UpdateItem/>
+                    </Route>
+                    <Route
+                        path="/admin/upload"
                         exact
                     >
                         <Upload/>
