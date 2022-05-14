@@ -20,7 +20,13 @@ export default function Admin() {
                     </Button>
                 </Link>
             </div>
-
+            <div>
+                <Link to='/admin/account' style={{textDecoration: 'none'}}>
+                    <Button type="button" variant="outlined" color="secondary">
+                        Quản lý khách hàng
+                    </Button>
+                </Link>
+            </div>
         </div>
 
     );

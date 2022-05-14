@@ -17,6 +17,7 @@ import Order from "./Admin/Order/Order";
 import Admin from "./Admin/Admin";
 import ItemQl from "./Admin/Item/ItemQl";
 import UpdateItem from "./Admin/Item/UpdateItem";
+import Account from "./Admin/customer/Account";
 
 function App() {
     const [cart,setCart] =useState([]);
@@ -233,6 +234,12 @@ function App() {
                         exact
                     >
                         <ItemQl/>
+                    </Route>
+                    <Route
+                        path="/admin/account"
+                        exact
+                    >
+                        <Account/>
                     </Route>
                     <Route
                         path="/admin/item/:id"
