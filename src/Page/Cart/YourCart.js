@@ -44,7 +44,8 @@ function YourCart({cart,changeQuantity}) {
                                 placeholder=""
                             />
                         </div>
-                        <input type="submit" value="PROCEED TO CHECKOUT"/>
+                        <input type="submit" value="PROCEED TO CHECKOUT">
+                        </input>
                     </div>
                 </div>
             </div>

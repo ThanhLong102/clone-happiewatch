@@ -9,11 +9,11 @@
 .payment_item{
     background: #f8f9fa;
     width: 50%;
-    margin-left: 8px;
     border-left:1px solid lightgray ;
+    padding-bottom: 10%;
 }
-.payment_item>hr{
-    width: 40%;
+hr{
+    width: 45%;
 }
 .contact_information >p{
     font-size: 18px;
@@ -33,7 +33,7 @@
 .payment_with_paypal{
     display: flex;
     background-color: #ffc439;
-    padding: 0px 80px 0px 80px;
+    padding: 0 10% 0 10%;
     font-size: smaller;
     border-radius: 5px !important;
 }
@@ -41,7 +41,7 @@
 .payment_with_gpay{
     display: flex;
     background-color: black;
-    padding: 0 50px 0 50px;
+    padding: 0 10% 0 10%;
     font-size: smaller;
     border-radius: 5px !important;
 }

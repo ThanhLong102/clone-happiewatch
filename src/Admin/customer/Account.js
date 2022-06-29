@@ -74,7 +74,7 @@ export default function Account() {
                                     {row.email}
                                 </StyledTableCell>
                                 <StyledTableCell align="left">{row.address}</StyledTableCell>
-                                <StyledTableCell align="left">{row.telephone}$</StyledTableCell>
+                                <StyledTableCell align="left">{row.telephone}</StyledTableCell>
                                 <StyledTableCell align="left">{row.username}</StyledTableCell>
                             </StyledTableRow>
                         ))}

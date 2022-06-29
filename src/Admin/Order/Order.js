@@ -110,7 +110,7 @@ export default function Order() {
                         {order.map((row) => (
                             <StyledTableRow key={row.code}>
                                 <StyledTableCell component="th" scope="row">
-                                    {row.customer.name}
+                                    {row.customer?.name}
                                 </StyledTableCell>
                                 <StyledTableCell component="th" scope="row">
                                     {row.code}
