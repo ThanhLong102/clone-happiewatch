@@ -56,7 +56,11 @@ function Login({handleDisplayLogin,logged,usered}) {
 
                     let raw = JSON.stringify({
                         "username": data.username,
-                        "password": data.password
+                        "password": data.password,
+                        'name': data.username,
+                        'email':data.email,
+                        'address': data.address,
+                        'telephone':data.telephone
                     });
                     const requestOptions = {
                         method: 'POSt',

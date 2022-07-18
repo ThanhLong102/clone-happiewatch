@@ -1,16 +1,34 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './Upload.css'
 import AddIcon from '@material-ui/icons/Add';
 import CloseIcon from '@material-ui/icons/Close';
+import axios from "axios";
 
 function Upload() {
     const [index,setIndex]= useState(0);
+
+    useEffect(() => {
+        axios({
+            method: 'GET',
+            url: 'http://localhost:8080/api/detail'
+        })
+            .then(response => {
+                const temp = response.data.reduce(function (p, v) {
+                    return ( p.id < v.id ? p.id : v.id );
+                });
+                console.log(temp);
+                setIndex(temp+1);
+            })
+            .catch((e) => {
+                console.log(e+ " error");
+            })
+    }, []);
     const [data,setData]=useState({});
     const [detail,setDetail]=useState([]);
 
     const handledAdd =()=>{
         setDetail([...detail,{
-            stt:index
+            id:index
         }]);
         setIndex(index+1);
     }
@@ -44,6 +62,7 @@ function Upload() {
         } catch (e) {
             console.log("error " + e);
         }
+        // window.location.assign('/');
     }
 
     const change =(e) =>{
@@ -89,7 +108,7 @@ function Upload() {
                                 <p>ID:</p>
                                 <input name="id"
                                        value={i.id}
-                                       onChange={e => changeDetail(e,stt)}
+                                       disabled
                                        placeholder="id"/>
                                 <p>Material:</p>
                                 <input name="material"
@@ -121,7 +140,7 @@ function Upload() {
                     <AddIcon onClick={handledAdd} style={{cursor:"pointer"}}/>
                 </div>
             </div>
-            <button onClick={addData}> Up</button>
+            <button style={{cursor:"pointer"}} onClick={addData}> Up</button>
         </div>
     );
 }

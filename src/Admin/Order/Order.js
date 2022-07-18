@@ -92,18 +92,18 @@ export default function Order() {
 
     return (
         <div className="order">
-            <h2>Quản lý đơn hàng</h2>
+            <h2>Order Management</h2>
             <TableContainer>
                 <Table sx={{minWidth: 700}} aria-label="customized table">
                     <TableHead>
                         <TableRow>
-                            <StyledTableCell align="left">Tên khách hàng</StyledTableCell>
-                            <StyledTableCell align="left">Mã đơn hàng</StyledTableCell>
-                            <StyledTableCell align="left">Ngày tạo đợn</StyledTableCell>
-                            <StyledTableCell align="left">Giá tiền</StyledTableCell>
-                            <StyledTableCell align="left">Tổng sản phẩm</StyledTableCell>
-                            <StyledTableCell align="left">Thanh toán</StyledTableCell>
-                            <StyledTableCell align="left">Thao tác</StyledTableCell>
+                            <StyledTableCell align="left">Name</StyledTableCell>
+                            <StyledTableCell align="left">Code</StyledTableCell>
+                            <StyledTableCell align="left">Date of creation</StyledTableCell>
+                            <StyledTableCell align="left">Price</StyledTableCell>
+                            <StyledTableCell align="left">Quantity</StyledTableCell>
+                            <StyledTableCell align="left">Payed</StyledTableCell>
+                            <StyledTableCell align="left">Manipulation</StyledTableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -118,8 +118,8 @@ export default function Order() {
                                 <StyledTableCell align="left">{row.creatDate}</StyledTableCell>
                                 <StyledTableCell align="left">{row.cost}$</StyledTableCell>
                                 <StyledTableCell align="left">{row.total_product}</StyledTableCell>
-                                {row.isPayed ? <StyledTableCell align="left">Đã thanh toán</StyledTableCell> :
-                                    <StyledTableCell align="left">Chưa thanh toán</StyledTableCell>}
+                                {row.isPayed ? <StyledTableCell align="left">Yes</StyledTableCell> :
+                                    <StyledTableCell align="left">No</StyledTableCell>}
                                 <StyledTableCell align="left">
                                     <Button type="button" variant="contained" onClick={() => addOder(row)}>
                                         Done

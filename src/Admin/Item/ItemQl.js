@@ -69,22 +69,22 @@ export default function ItemQl() {
 
     return (
         <div className="order">
-            <h2>Quản lý sản phẩm</h2>
+            <h2>Product Management</h2>
             <Link to='/admin/upload' style={{textDecoration: 'none'}}>
                 <Button type="button" variant="contained">
-                    Thêm sản phẩm mới
+                    Add new item
                 </Button>
             </Link>
             <TableContainer>
                 <Table sx={{minWidth: 700}} aria-label="customized table">
                     <TableHead>
                         <TableRow>
-                            <StyledTableCell align="left">Ảnh</StyledTableCell>
-                            <StyledTableCell align="left">Tên sản phẩm</StyledTableCell>
-                            <StyledTableCell align="left">Chất liệu</StyledTableCell>
-                            <StyledTableCell align="left">Số lượng</StyledTableCell>
-                            <StyledTableCell align="left">Giá tiền</StyledTableCell>
-                            <StyledTableCell align="left">Thao tác</StyledTableCell>
+                            <StyledTableCell align="left">Images</StyledTableCell>
+                            <StyledTableCell align="left">Name</StyledTableCell>
+                            <StyledTableCell align="left">Material</StyledTableCell>
+                        <StyledTableCell align="left">Quantity</StyledTableCell>
+                            <StyledTableCell align="left">Price</StyledTableCell>
+                            <StyledTableCell align="left">Manipulation</StyledTableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>

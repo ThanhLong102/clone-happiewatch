@@ -8,7 +8,6 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import axios from "axios";
-import {Button} from "@material-ui/core";
 
 
 const StyledTableCell = styled(TableCell)(({theme}) => ({
@@ -52,15 +51,15 @@ export default function Account() {
 
     return (
         <div className="order">
-            <h2>Quản lý thông tin khách hàng</h2>
+            <h2>Customer Information Management</h2>
             <TableContainer>
                 <Table sx={{minWidth: 700}} aria-label="customized table">
                     <TableHead>
                         <TableRow>
-                            <StyledTableCell align="left">Tên khách hàng</StyledTableCell>
+                            <StyledTableCell align="left">Name</StyledTableCell>
                             <StyledTableCell align="left">Email</StyledTableCell>
                             <StyledTableCell align="left">Address</StyledTableCell>
-                            <StyledTableCell align="left">Số điện thoại</StyledTableCell>
+                            <StyledTableCell align="left">Telephone</StyledTableCell>
                             <StyledTableCell align="left">UserName</StyledTableCell>
                         </TableRow>
                     </TableHead>

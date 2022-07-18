@@ -15,7 +15,7 @@ function FormRegister({dataRegister}) {
             <form  onSubmit={handleSubmit(onSubmit)}>
                 <div className="form_login_l">
                     <div className="form_login_input">
-                        <TextField id="outlined-basic" label="Tên đăng nhập" variant="outlined" size="small" {...register("username",{ required: 'Bạn cần nhập username' })}
+                        <TextField id="outlined-basic" label="User name" variant="outlined" size="small" {...register("username",{ required: 'Bạn cần nhập username' })}
                                    style={{
                                        maxWidth: '100%',
                                        minWidth: '0',
@@ -26,7 +26,7 @@ function FormRegister({dataRegister}) {
                         {errors.username && <span className="form_login_message">{errors.username.message}</span>}
                     </div>
                     <div className="form_login_input">
-                        <TextField id="outlined-basic" label="Mật khẩu" variant="outlined" size="small" type="password" {...register("password",{ required: 'Bạn cần nhập mật khẩu' })}
+                        <TextField id="outlined-basic" label="Password" variant="outlined" size="small" type="password" {...register("password",{ required: 'Bạn cần nhập mật khẩu' })}
                                    style={{
                                        maxWidth: '100%',
                                        minWidth: '0',
@@ -38,7 +38,7 @@ function FormRegister({dataRegister}) {
 
                     </div>
                     <div className="form_login_input">
-                        <TextField id="outlined-basic" label="Nhập lại mật khẩu" variant="outlined" size="small" type="password" {...register("password",{ required: 'Bạn cần nhập mật khẩu' })}
+                        <TextField id="outlined-basic" label="Email" variant="outlined" size="small"  {...register("email")}
                                    style={{
                                        maxWidth: '100%',
                                        minWidth: '0',
@@ -46,11 +46,21 @@ function FormRegister({dataRegister}) {
                                    }}
                         />
                         <br/>
-                        {errors.password && <span className="form_login_message">{errors.password.message}</span>}
 
                     </div>
                     <div className="form_login_input">
-                        <TextField id="outlined-basic" label="Mã giới thiệu" variant="outlined" size="small"  {...register("code")}
+                        <TextField id="outlined-basic" label="Address" variant="outlined" size="small"  {...register("address")}
+                                   style={{
+                                       maxWidth: '100%',
+                                       minWidth: '0',
+                                       width: '100%',
+                                   }}
+                        />
+                        <br/>
+
+                    </div>
+                    <div className="form_login_input">
+                        <TextField id="outlined-basic" label="Telephone" variant="outlined" size="small"  {...register("telephone")}
                                    style={{
                                        maxWidth: '100%',
                                        minWidth: '0',
@@ -65,7 +75,7 @@ function FormRegister({dataRegister}) {
 
                 <br/>
                 <div className="form_login_submit_s">
-                    <button className="form_login_submit">ĐĂNG KÍ</button>
+                    <button className="form_login_submit">ĐĂNG Kí</button>
                 </div>
 
             </form>

@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Link, useParams} from "react-router-dom";
 import axios from "axios";
-import {Button} from "@material-ui/core";
 
 function UpdateItem() {
     const id = useParams().id;
@@ -92,8 +91,8 @@ function UpdateItem() {
                            onChange={(e) => change(e)}/>
                 </div>
             </div>
-            <Link to='/admin/item' style={{textDecoration: 'none', cursor: 'pointer' }} class="upload_product" >
-                <button onClick={addData}> Up</button>
+            <Link to='/admin/item'  class="upload_product" >
+                <button style={{textDecoration: 'none', cursor: 'pointer' }} onClick={addData}> Up</button>
             </Link>
         </div>
     );
