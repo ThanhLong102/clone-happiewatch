@@ -5,8 +5,8 @@ import {Link} from "react-router-dom";
 
 
 function Home() {
-    const [post,setPost]=useState("https://cdn.shopify.com/s/files/1/0477/6699/5109/files/banner-pc.jpg?v=1629109352");
-    const news = ["https://cdn.shopify.com/s/files/1/0477/6699/5109/files/banner-pc.jpg?v=1629109352","https://cdn.shopify.com/s/files/1/0477/6699/5109/files/20210708110908.jpg?v=1625713763"];
+    const [post,setPost]=useState("https://www.casio.com/content/casio/locales/vn/vi/products/_jcr_content/root/responsivegrid/image.casiocoreimg.jpeg/1647499306735/emi-top-pc-global-20220316.jpeg");
+    const news = ["https://www.casio.com/content/casio/locales/vn/vi/products/_jcr_content/root/responsivegrid/image.casiocoreimg.jpeg/1647499306735/emi-top-pc-global-20220316.jpeg","https://www.tagheuer.com/on/demandware.static/-/Library-Sites-TagHeuer-Shared/default/dw8c6271ca/images/homepage/2022-07/TH_GM_Header-Grayman.jpg"];
     const items =["https://cdn.shopify.com/s/files/1/0477/6699/5109/files/duke_800x800_crop_center.png?v=1629111487","https://cdn.shopify.com/s/files/1/0477/6699/5109/files/bull_5fe5175a-54a8-495e-b557-1d185aef6081_800x800_crop_center.png?v=1629111478","https://cdn.shopify.com/s/files/1/0477/6699/5109/files/corgi_800x800_crop_center.png?v=1629111563","https://cdn.shopify.com/s/files/1/0477/6699/5109/files/Ginger_800x800_crop_center.png?v=1629111600","https://cdn.shopify.com/s/files/1/0477/6699/5109/files/Poison_800x800_crop_center.png?v=1629111735"]
 
     useEffect(() =>{

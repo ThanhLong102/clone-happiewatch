@@ -10,8 +10,8 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 function Header({handleDisplayCart,totalItems,handleDisplaySearch,handleDisplayMenu,handleDisplay,handleDisplayLogin,login,handleDisplayLogout}) {
     return (
         <div className="header" onClick={handleDisplay}>
-            <Link to='/' >
-                <img className="header_logo" src="https://cdn.shopify.com/s/files/1/0477/6699/5109/files/logo_de4a0ab6-f5e0-4a0f-9c68-c20f8a803fc7.png?v=1627962695" alt="Logo"/>
+            <Link to='/' style={{textDecoration: 'none', marginLeft: '20px', color: 'black'}}>
+                <h2>KIENWATCH</h2>
             </Link>
             <div className="header_page">
                 <Link to='/collection' style={{textDecoration: 'none' }}>

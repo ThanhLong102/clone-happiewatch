@@ -164,8 +164,8 @@ function App() {
         console.log(data);
         setUser(data);
     }
-    const handleNewUserMessage = (newMessage) => {
-        addResponseMessage('Welcome to this **awesome** chat!');
+    const handleNewUserMessage = () => {
+        addResponseMessage('Chào mừng bạn đến với KIENWATCH');
     };
 
 
