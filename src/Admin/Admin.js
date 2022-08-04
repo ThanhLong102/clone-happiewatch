@@ -9,21 +9,21 @@ export default function Admin() {
             <div>
                 <Link to='/admin/item' style={{textDecoration: 'none' }}>
                     <Button type="button" variant="outlined"  color="secondary">
-                        Product Management
+                        Quản lý sản phẩm
                     </Button>
                 </Link>
             </div>
             <div>
                 <Link to='/admin/order' style={{textDecoration: 'none'}}>
                     <Button type="button" variant="outlined" color="secondary">
-                        Order Management
+                        Quản lý đơn hàng
                     </Button>
                 </Link>
             </div>
             <div>
                 <Link to='/admin/account' style={{textDecoration: 'none'}}>
                     <Button type="button" variant="outlined" color="secondary">
-                        Customer management
+                        Quản lý khách hàng
                     </Button>
                 </Link>
             </div>

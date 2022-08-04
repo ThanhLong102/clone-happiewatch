@@ -53,29 +53,29 @@ function Paypal({items}) {
             <div className="payment_info">
                 <form>
                     <div className="col-50">
-                        <h3 style={{"margin-bottom":"70px"}}>Payment</h3>
-                        <label htmlFor="currency">Currency</label>
+                        <h3 style={{"margin-bottom":"70px"}}>Thanh toán</h3>
+                        <label htmlFor="currency">Loại tiền tệ</label>
                         <input className="inputs"
                                name="currency"
                                placeholder="Currency"
                                value={data.currency}
                                onChange={e => change(e)}
                         />
-                        <label htmlFor="method">Payment Method</label>
+                        <label htmlFor="method">Hình thức thanh toán</label>
                         <input className="inputs"
                                name="method"
                                placeholder="Method"
                                value={data.method}
                                onChange={e => change(e)}
                         />
-                        <label htmlFor="intent">Intent</label>
+                        <label htmlFor="intent">Mục đích</label>
                         <input className="inputs"
                                name="intent"
                                placeholder="Intent"
                                value={data.intent}
                                onChange={e => change(e)}
                         />
-                        <label htmlFor="description">Payment Description</label>
+                        <label htmlFor="description">Mô tả</label>
                         <input className="inputs"
                                name="description"
                                placeholder="Description"
@@ -99,16 +99,16 @@ function Paypal({items}) {
                 </div>
                 <hr style={{marginLeft: 70}}/>
                 <div className="cart_total1">
-                    <p>Subtotal</p>
+                    <p>Giá sản phẩm</p>
                     <p className="cart_total1_content">${Subtotal}</p>
                 </div>
                 <div className="cart_total1">
                     <p>Shipping</p>
-                    <p className="cart_total1_content">Free</p>
+                    <p className="cart_total1_content">Miễn phí</p>
                 </div>
                 <hr style={{marginLeft: 70}}/>
                 <div className="cart_total1">
-                    <p>Total</p>
+                    <p>Tổng</p>
                     <p className="cart_total1_content">USD ${Subtotal}</p>
                 </div>
             </div>

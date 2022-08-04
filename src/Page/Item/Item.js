@@ -19,7 +19,7 @@ function Item({addCart}) {
                 "image": "",
                 "features": "",
                 "price": 0,
-                "quantity":0
+                "quantity": 0
             }
         ]
     });
@@ -50,7 +50,7 @@ function Item({addCart}) {
     }
 
     const handledQualityAdd = (quantityE) => {
-        if (quantity >=quantityE ) return quantity;
+        if (quantity >= quantityE) return quantity;
         else setQuantity(quantity + 1);
     }
 
@@ -100,7 +100,7 @@ function Item({addCart}) {
                         <StarRateIcon/>
                     </span>
                     <h2>${detail.price}</h2>
-                    <p>Material *</p>
+                    <p>Chất liệu *</p>
                     <div className="add_material">
                         {infoProduct.detail.map((i, index) =>
                             <p className='add_material_i' onClick={() => changeMaterial(i, index)}
@@ -108,20 +108,20 @@ function Item({addCart}) {
                         )}
                     </div>
 
-                    <p>Quantity: ({detail.quantity})</p>
+                    <p>Số lượng: ({detail.quantity})</p>
                     <div className="quantity">
                         <button value="-" onClick={handledQuality}>-</button>
                         <input type="text" value={quantity}/>
                         <button value="+" onClick={() => handledQualityAdd(detail.quantity)}>+</button>
                     </div>
-                    <span><p>Subtotal: <b>${Subtotal}</b></p></span>
-                    <Button className="infoMore" variant="outlined" onClick={handleAddCart}>ADD TO CARD</Button>
+                    <span><p>Tổng: <b>${Subtotal}</b></p></span>
+                    <Button className="infoMore" variant="outlined" onClick={handleAddCart}>Thêm vào giỏ hàng</Button>
                     <p/>
                     <Link className="content_items3" to='/cart' style={{paddingLeft: 13, textDecoration: 'none'}}>
-                        <Button className="infoMore" variant="outlined">BUY IT NOW</Button>
+                        <Button className="infoMore" variant="outlined">Mua ngay</Button>
                     </Link>
                     <div className="payment">
-                        <p>Secure Checkout With</p>
+                        <p>Thanh toán an toàn với</p>
                         <div className="card">
                             <img src="https://trust.conversionbear.com/../static/badges/mastercard_color_card.svg"
                                  className="imageContainer"
@@ -144,12 +144,12 @@ function Item({addCart}) {
                 <div/>
                 <div className="Features">
                     <h2>{infoProduct.name}-Shrek</h2>
-                    <p>The trendy and cute guardian on your wrist!</p>
-                    <p>Shrek is one of the most beloved pets and guardians of HAPPIEWATCH. Each cute pet gives us
-                        irreplaceable companionship and happiness. We believe that Shrek's shining star eyes and
-                        signature tongue-out laugh will also become your source of happiness. The dial adopts five
-                        different engraving textures with high-precision coloring technology, which makes this watch
-                        vivid and eye-catching.</p>
+                    <p>Người bảo vệ hợp thời trang và dễ thương trên cổ tay của bạn!</p>
+                    <p>Shrek là một trong những vật nuôi và là người bảo vệ được yêu thích nhất của HÃY MÃI MÃI. Mỗi vật
+                        nuôi dễ thương mang đến cho chúng ta sự đồng hành và hạnh phúc không gì thay thế được. Chúng tôi
+                        tin rằng đôi mắt sáng như sao và nụ cười lè lưỡi đặc trưng của Shrek cũng sẽ trở thành nguồn
+                        hạnh phúc của bạn. Mặt số áp dụng năm kết cấu khắc khác nhau với công nghệ tô màu có độ chính
+                        xác cao, làm cho chiếc đồng hồ này trở nên sống động và bắt mắt.</p>
                     <img src={detail.features} alt=""/>
                 </div>
                 <div/>

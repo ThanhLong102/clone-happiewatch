@@ -5,7 +5,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import './Header.css'
 import {Link} from "react-router-dom";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 
 
 function Header({handleDisplayCart,totalItems,handleDisplaySearch,handleDisplayMenu,handleDisplay,handleDisplayLogin,login,handleDisplayLogout}) {
@@ -16,21 +15,21 @@ function Header({handleDisplayCart,totalItems,handleDisplaySearch,handleDisplayM
             </Link>
             <div className="header_page">
                 <Link to='/collection' style={{textDecoration: 'none' }}>
-                    <p className="page">FEATURED COLLECTION</p>
+                    <p className="page">Bộ sưu tập</p>
                 </Link>
                 <Link to='/strap' style={{textDecoration: 'none' }}>
-                    <p className="page">STRAPS</p>
+                    <p className="page">Dây đeo</p>
                 </Link>
                 <Link to='/blog' style={{textDecoration: 'none' }}>
-                    <p className="page">BLOGS</p>
+                    <p className="page">Bài viết</p>
                 </Link>
             </div>
             <div className="header_items">
-                { login === false  ? <h6 className="header_items_login"  onClick={handleDisplayLogin}>LOGIN</h6> : <div className="logout">
-                    <h6 className="header_items_login" onClick={handleDisplayLogout} >LOG OUT</h6>
+                { login === false  ? <h6 className="header_items_login"  onClick={handleDisplayLogin}>Đăng nhập</h6> : <div className="logout">
+                    <h6 className="header_items_login" onClick={handleDisplayLogout} >Đăng xuất</h6>
                     <AccountCircleIcon fontSize="small" style={{marginRight:"20px",marginTop:"32px"}}/>
                 </div> }
-                <p>CART</p>
+                <p>Giỏ hàng</p>
                 {totalItems>0 && <span>{totalItems}</span>}
                 <ShoppingCartOutlinedIcon className="header_item" onClick={handleDisplayCart} fontSize="small" style={{cursor:"pointer"}}/>
                 <p>|</p>

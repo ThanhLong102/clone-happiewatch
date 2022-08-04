@@ -27,7 +27,7 @@ function Home() {
             </Link>
             <div className="content_recommend">
                 <h6 className="content_title">
-                    <span>TRENDING NOW</span>
+                    <span>ĐANG LÀ XU HƯỚNG</span>
                 </h6>
                 <div className="content_items">
                     <div className="item">
@@ -37,14 +37,14 @@ function Home() {
                     </div>
                     <Link to='/collection' style={{textDecoration: 'none' }}>
                         <div className="content_items" >
-                            <Button className="infoMore" variant="outlined">LEARN MORE</Button>
+                            <Button className="infoMore" variant="outlined">TÌM HIỂU THÊM</Button>
                         </div>
                     </Link>
                 </div>
             </div>
             <div className="signUp">
                 <div className="form_signup">
-                    <p>SIGN UP FOR NEWSLETTER</p>
+                    <p>ĐĂNG KÝ ĐỂ NHẬN BẢN TIN</p>
                     <form>
                         <label>
                             <input className="input_container" type="email" name="name" placeholder="Email address"

@@ -51,16 +51,16 @@ export default function Account() {
 
     return (
         <div className="order">
-            <h2>Customer Information Management</h2>
+            <h2>Quản lý thông tin khách hàng</h2>
             <TableContainer>
                 <Table sx={{minWidth: 700}} aria-label="customized table">
                     <TableHead>
                         <TableRow>
-                            <StyledTableCell align="left">Name</StyledTableCell>
+                            <StyledTableCell align="left">Tên</StyledTableCell>
                             <StyledTableCell align="left">Email</StyledTableCell>
-                            <StyledTableCell align="left">Address</StyledTableCell>
-                            <StyledTableCell align="left">Telephone</StyledTableCell>
-                            <StyledTableCell align="left">UserName</StyledTableCell>
+                            <StyledTableCell align="left">Địa chỉ</StyledTableCell>
+                            <StyledTableCell align="left">Số điện thoại</StyledTableCell>
+                            <StyledTableCell align="left">Tên đăng nhập</StyledTableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>

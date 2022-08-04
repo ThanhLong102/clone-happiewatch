@@ -31,7 +31,7 @@ function EditItem({item,changeQuantity}) {
                     <p>HappieWatch</p>
                     <h4>${tempQuantity*item.price}</h4>
 
-                    <h1>Quantity</h1>
+                    <h1>Số lượng</h1>
                     <div className="edit">
                         <div className="quantity">
                             <button value="-" onClick={handledQuality}>-</button>
@@ -39,8 +39,8 @@ function EditItem({item,changeQuantity}) {
                             <button value="+" onClick={() => setTempQuantity(tempQuantity+1)}>+</button>
                         </div>
                         <div className="edit_update">
-                            <Button variant="outlined" onClick={() => handleUpDate(item.id)}>Update Cart</Button>
-                            <Button variant="outlined">X Remove</Button>
+                            <Button variant="outlined" onClick={() => handleUpDate(item.id)}>Cập nhật</Button>
+                            <Button variant="outlined">X Xóa</Button>
                         </div>
                     </div>
 

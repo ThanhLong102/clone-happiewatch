@@ -57,20 +57,20 @@ function UpdateItem() {
 
     return (
         <div className="upload_product">
-            <h1>Upload Product </h1>
+            <h1>Upload sản phẩm</h1>
             <div className="form_detail_total">
                 <div className="form_detail_i">
-                    <p>Material:</p>
+                    <p>Chất liệu:</p>
                     <input name="material"
                            value={data.material}
                            placeholder="Material,color..."
                            onChange={e => change(e)}/>
-                    <p>Cost:</p>
+                    <p>Giá:</p>
                     <input name="price"
                            value={data.price}
                            type="number" placeholder="Price"
                            onChange={e => change(e)}/>
-                    <p>Quantity:</p>
+                    <p>Số lượng:</p>
                     <input name="quantity"
                            value={data.quantity}
                            type="number" placeholder="Price"
@@ -78,14 +78,14 @@ function UpdateItem() {
                 </div>
                 <div className="form_detail_image">
                     <img src={data.image} alt=""/>
-                    <p>Image Main:</p>
+                    <p>Ảnh chính:</p>
                     <input name="image"
                            value={data.image}
                            onChange={(e) => change(e)}/>
                 </div>
                 <div className="form_detail_image">
                     <img src={data.features} alt=""/>
-                    <p>Image Features:</p>
+                    <p>Ảnh phụ:</p>
                     <input name="features"
                            value={data.features}
                            onChange={(e) => change(e)}/>

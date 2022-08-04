@@ -8,7 +8,7 @@ function Cart({cart, removeCart, reduceQuantity, raiseQuantity, totalQuantity}) 
     let Subtotal = 0;
 
     return (<div className="cart">
-        <p>REVIEW YOUR CART</p>
+        <p>XEM LẠI GIỎ HÀNG CỦA BẠN</p>
         {totalQuantity > 0 && <p className="total_quantity">{totalQuantity} items</p>}
         {totalQuantity > 0 && <div className="cart_items">
             {cart.map((item) => {
@@ -39,23 +39,23 @@ function Cart({cart, removeCart, reduceQuantity, raiseQuantity, totalQuantity}) 
 
 
         {Subtotal !== 0 ? (<div className="cart_notEmpty">
-            <hr style={{margin: 20}}/>
+            <hr style={{marginLeft: 40, width:"400px"}}/>
             <div className="cart_total">
-                <p>Subtotal:</p>
+                <p>Tổng:</p>
                 <p>${Subtotal}</p>
             </div>
             <div className="content_items">
                 <Link className="content_items1" to='/payment' style={{paddingLeft: 13, textDecoration: 'none'}}>
-                    <Button className="infoMore" variant="outlined" style={{}}>CHECK OUT</Button>
+                    <Button className="infoMore" variant="outlined" style={{}}>THANH TOÁN</Button>
                 </Link>
                 <Link className="content_items2" to='/cart' style={{paddingLeft: 13, textDecoration: 'none'}}>
-                    <Button className="infoMore" variant="outlined">OR VIEW CART</Button>
+                    <Button className="infoMore" variant="outlined">HOẶC XEM GIỎ HÀNG</Button>
                 </Link>
             </div>
         </div>) : (<div className="cart_empty">
-            <p>Your cart is currently empty.</p>
+            <p>Giỏ hàng của bạn hiện đang trống.</p>
             <Link to='/collection' style={{paddingLeft: 13, textDecoration: 'none'}}>
-                <Button className="infoMore" variant="outlined">CONTINUE SHOPPING</Button>
+                <Button className="infoMore" variant="outlined">TIẾP TỤC MUA SẮM</Button>
             </Link>
         </div>)}
 

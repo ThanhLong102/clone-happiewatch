@@ -84,16 +84,16 @@ function Upload() {
 
     return (
         <div className="upload_product">
-            <h1>Upload Product </h1>
+            <h1>Upload sản phẩm </h1>
             <div className="form" >
                 <div className="form_name">
-                    <p>Name Product:</p>
+                    <p>Tên sản phẩm:</p>
                     <input name="name"
                            placeholder="Name"
                            value={data.name}
                            onChange={e=>change(e)}
                     />
-                    <p>Type Product:</p>
+                    <p>Loại sản phẩm (watch, straps):</p>
                     <input name="type"
                            placeholder="Type"
                            value={data.type}
@@ -110,12 +110,12 @@ function Upload() {
                                        value={i.id}
                                        disabled
                                        placeholder="id"/>
-                                <p>Material:</p>
+                                <p>Chất liệu:</p>
                                 <input name="material"
                                        value={i.material}
                                        placeholder="Material,color..."
                                        onChange={e => changeDetail(e,stt)}/>
-                                <p>Cost:</p>
+                                <p>Giá:</p>
                                 <input name="price"
                                        value={i.price}
                                        type="number" placeholder="Price"
@@ -123,14 +123,14 @@ function Upload() {
                             </div>
                             <div className="form_detail_image">
                                 <img src={i.image} alt=""/>
-                                <p>Image Main:</p>
+                                <p>Ảnh chính:</p>
                                 <input name="image"
                                        value={i.image}
                                        onChange={(e) => changeDetail(e,stt)}/>
                             </div>
                             <div className="form_detail_image">
                                 <img src={i.features} alt=""/>
-                                <p>Image Features:</p>
+                                <p>Ảnh đặc tính:</p>
                                 <input name="features"
                                        value={i.features}
                                        onChange={(e) => changeDetail(e,stt)}/>

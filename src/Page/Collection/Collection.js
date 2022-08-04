@@ -54,17 +54,17 @@ function Collection({Type}) {
             {   type === "collection" ?(
                 <div>
                     <img src="https://cdn.shopify.com/s/files/1/0477/6699/5109/files/BANNER500.jpg?v=1629452134" alt=""/>
-                    <h3>FEATURED COLLECTION</h3>
-                    <p className="title">HappieWatch collaborates with talented designers, as well as graffiti and tattoo artists across the world, to bring you a whole collection of one-of-a-kind wrist watches.
+                    <h3>Bộ sưu tập nổi bật</h3>
+                    <p className="title">HappieWatch hợp tác với các nhà thiết kế tài năng, cũng như các nghệ sĩ graffiti và xăm hình trên toàn thế giới, để mang đến cho bạn toàn bộ bộ sưu tập đồng hồ đeo tay độc nhất vô nhị.
                     </p>
                 </div>):
                 <div>
-                    <h3>STRAPS</h3>
+                    <h3>Dây đeo</h3>
                 </div>
             }
             <div className="filters">
                 <FormControl variant="outlined" >
-                    <InputLabel htmlFor="outlined-age-native-simple">SORT</InputLabel>
+                    <InputLabel htmlFor="outlined-age-native-simple">Sắp xếp</InputLabel>
                     <Select
                         native
                         value={sortBy}
@@ -75,9 +75,9 @@ function Collection({Type}) {
                         }}
                     >
                         <option aria-label="None" value="" />
-                        <option value="Featured">Featured</option>
-                        <option value="Price,low to high">Price,low to high</option>
-                        <option value="Price,high to low">Price,high to low</option>
+                        <option value="Featured">Đặc sắc</option>
+                        <option value="Price,low to high">Giá từ thấp đến cao</option>
+                        <option value="Price,high to low">Giá từ cao đến thấp</option>
                         <option value="A-Z">A-Z</option>
                         <option value="Z-A">Z-A</option>
                     </Select>

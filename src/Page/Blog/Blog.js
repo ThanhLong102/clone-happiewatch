@@ -4,7 +4,7 @@ import './Blog.css'
 function Blog() {
     return (
         <div className="blog">
-            <h3>NEWS</h3>
+            <h3>Tin tức</h3>
             <h2>Watch Can Be Different⌚</h2>
             <p>by Happie Watch on Aug 12, 2021</p>
             <h1>WARNING: BEWARE OF WILD WATCHES</h1>

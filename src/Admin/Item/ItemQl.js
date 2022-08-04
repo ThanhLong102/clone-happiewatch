@@ -69,22 +69,22 @@ export default function ItemQl() {
 
     return (
         <div className="order">
-            <h2>Product Management</h2>
+            <h2>Quản lý sản phẩm</h2>
             <Link to='/admin/upload' style={{textDecoration: 'none'}}>
                 <Button type="button" variant="contained">
-                    Add new item
+                    Thêm mới
                 </Button>
             </Link>
             <TableContainer>
                 <Table sx={{minWidth: 700}} aria-label="customized table">
                     <TableHead>
                         <TableRow>
-                            <StyledTableCell align="left">Images</StyledTableCell>
-                            <StyledTableCell align="left">Name</StyledTableCell>
-                            <StyledTableCell align="left">Material</StyledTableCell>
-                        <StyledTableCell align="left">Quantity</StyledTableCell>
-                            <StyledTableCell align="left">Price</StyledTableCell>
-                            <StyledTableCell align="left">Manipulation</StyledTableCell>
+                            <StyledTableCell align="left">Ảnh</StyledTableCell>
+                            <StyledTableCell align="left">Tên</StyledTableCell>
+                            <StyledTableCell align="left">Chất liệu</StyledTableCell>
+                        <StyledTableCell align="left">Số lượng</StyledTableCell>
+                            <StyledTableCell align="left">Giá</StyledTableCell>
+                            <StyledTableCell align="left">Hành động</StyledTableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -102,11 +102,11 @@ export default function ItemQl() {
                                     <StyledTableCell align="left">
                                         <Link to={`/admin/item/${i.id}`} style={{textDecoration: 'none'}}>
                                             <Button type="button" variant="contained">
-                                                Update
+                                                Cập nhật
                                             </Button>
                                         </Link>
                                         <Button type="button" variant="contained" onClick={() => deleteItem(i.id)}>
-                                            Delete
+                                            Xóa
                                         </Button>
                                     </StyledTableCell>
                                 </StyledTableRow>

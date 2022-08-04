@@ -18,7 +18,7 @@ function Payment({items, user}) {
     const addOder = async () => {
         console.log(data);
         if (data.username === undefined) {
-            alert("please log in");
+            alert("Vui lòng đăng nhập!");
         } else {
             try {
                 const myHeaders = new Headers();
@@ -95,7 +95,7 @@ function Payment({items, user}) {
             } catch (e) {
                 console.log("error " + e);
             }
-            alert("Order Success");
+            alert("Đăt hàng thành công");
             // eslint-disable-next-line no-restricted-globals
             window.location.assign('/')
         }
@@ -147,11 +147,11 @@ function Payment({items, user}) {
                 </div>
                 <div className="line_or">
                     <hr/>
-                    <p>OR</p>
+                    <p>hoặc</p>
                     <hr/>
                 </div>
                 <div className="contact_information">
-                    <p>Contact information</p>
+                    <p>Thông tin liên lạc</p>
                     <input className="inputs"
                            name="email"
                            placeholder="Email"
@@ -160,11 +160,11 @@ function Payment({items, user}) {
                     />
                     <div className="checkboxEmail">
                         <input type="checkbox"/>
-                        <span>Email me with news and offers</span>
+                        <span>Gửi email cho tôi với tin tức và ưu đãi</span>
                     </div>
                 </div>
                 <div className="input_info">
-                    <p>Shipping address (PO Boxes will not be available for shipping)</p>
+                    <p>Địa chỉ giao hàng (Hộp thư bưu điện sẽ không có sẵn để giao hàng)</p>
 
                     <div className="input_info_data">
                         <input className="inputs"
@@ -189,7 +189,7 @@ function Payment({items, user}) {
                         />
                         <div className="checkboxEmail">
                             <input type="checkbox"/>
-                            <span>Save this information for next time</span>
+                            <span>Lưu thông tin này cho lần sau</span>
                         </div>
                     </div>
                 </div>
@@ -208,16 +208,16 @@ function Payment({items, user}) {
                 </div>
                 <hr style={{marginLeft: 70}}/>
                 <div className="cart_total1">
-                    <p>Subtotal</p>
+                    <p>Giá sản phẩm</p>
                     <p className="cart_total1_content">${Subtotal}</p>
                 </div>
                 <div className="cart_total1">
                     <p>Shipping</p>
-                    <p className="cart_total1_content">Free</p>
+                    <p className="cart_total1_content">Miễn phí</p>
                 </div>
                 <hr style={{marginLeft: 70}}/>
                 <div className="cart_total1">
-                    <p>Total</p>
+                    <p>Tổng</p>
                     <p className="cart_total1_content">USD ${Subtotal}</p>
                 </div>
             </div>

@@ -7,7 +7,7 @@ function ItemSearch({image,name,price}) {
             <img src={image} alt=''/>
             <p>HappieWatch</p>
             <h4>{name}</h4>
-            <p>from ${price}</p>
+            <p>từ ${price}</p>
         </div>
     );
 }

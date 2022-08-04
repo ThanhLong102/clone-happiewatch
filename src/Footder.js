@@ -11,11 +11,11 @@ function Footder(props) {
         <div className="footder">
             <div className="policys">
                 <div className="policy_delivery">
-                    <ul >
-                        <span className="policy"><AirplanemodeActiveIcon/> EPRESS DELIVERY</span>
-                        <span className="policy"><PolicyIcon/> 12 MONTH WARRANTY</span>
-                        <span className="policy"><KeyboardReturnIcon/> 7 DAYS RETURN&EXCHANGE</span>
-                        <span className="policy"><RedeemIcon/> GIFT BOX PACKING</span>
+                    <ul>
+                        <span className="policy"><AirplanemodeActiveIcon/> GIAO HÀNG NHANH CHÓNG</span>
+                        <span className="policy"><PolicyIcon/>BẢO HÀNH 12 THÁNG</span>
+                        <span className="policy"><KeyboardReturnIcon/> 7 NGÀY TRẢ LẠI & TRAO ĐỔI</span>
+                        <span className="policy"><RedeemIcon/> ĐÓNG GÓI HỘP</span>
                     </ul>
                 </div>
             </div>
@@ -23,7 +23,7 @@ function Footder(props) {
                 <div className="contact">
                     <GroupWorkIcon/>
                     <p>EST. 2019</p>
-                    <p>Customer Service:</p>
+                    <p>Dịch vụ khách hàng:</p>
                     <p>support@happiewatch.com</p>
                     <div>
                         <svg className xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -44,28 +44,28 @@ function Footder(props) {
                     </div>
                 </div>
                 <div className="contact">
-                    <h3>COMPANY INFO</h3>
-                    <p>About Us</p>
-                    <p>Contact Us</p>
-                    <p>Become A Stockist</p>
+                    <h3>Thông tin công ty</h3>
+                    <p>Về chúng tôi</p>
+                    <p>Liên hệ chúng tôi</p>
+                    <p>Trở thành một nhà chứng khoán</p>
                 </div>
                 <div className="contact">
-                    <h3>CUSTOMER SERVICE</h3>
-                    <p>Shipping Information</p>
-                    <p>Returns & Refunds Policy</p>
-                    <p>Quality Warranty</p>
+                    <h3>DỊCH VỤ KHÁCH HÀNG</h3>
+                    <p>Thông tin vận chuyển</p>
+                    <p>Chính sách trả hàng & hoàn lại tiền</p>
+                    <p>Bảo hành chất lượng</p>
                 </div>
                 <div className="contact">
-                    <h3>LEGAL</h3>
-                    <p>Privacy Policy</p>
-                    <p>Terms and Conditions</p>
-                    <p>Intellectual Property Rights</p>
+                    <h3>HỢP PHÁP</h3>
+                    <p>Chính sách bảo mật</p>
+                    <p>Các điều khoản và điều kiện</p>
+                    <p>Quyền sở hữu trí tuệ</p>
                 </div>
                 <div className="contact">
-                    <h3>SIGN UP FOR NEWSLETTER</h3>
-                    <p>Receive our latest updates</p>
-                    <p>about our products and</p>
-                    <p>promotions.</p>
+                    <h3>ĐĂNG KÝ ĐỂ NHẬN BẢN TIN</h3>
+                    <p>Nhận thông tin cập nhật mới nhất của chúng tôi</p>
+                    <p>về sản phẩm của chúng tôi và</p>
+                    <p>Các chương trình khuyến mãi.</p>
                 </div>
             </div>
         </div>

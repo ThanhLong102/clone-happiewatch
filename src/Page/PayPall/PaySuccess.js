@@ -100,10 +100,10 @@ function PaySuccess({items, user}) {
 
             <div className="payment_info">
                 <Link to='/' style={{textDecoration: 'none', cursor: 'pointer'}} >
-                    <h2 onClick={addOder} style={{marginTop: 'none', cursor: 'pointer'}}>Payment success</h2>
+                    <h2 onClick={addOder} style={{marginTop: 'none', cursor: 'pointer'}}>Thanh toán thành công</h2>
                 </Link>
                 <div className="contact_information">
-                    <p>Contact information</p>
+                    <p>Thông tin liên lạc</p>
                     <input className="inputs"
                            name="email"
                            placeholder="Email"
@@ -112,7 +112,7 @@ function PaySuccess({items, user}) {
                     />
                 </div>
                 <div className="input_info">
-                    <p>Shipping address (PO Boxes will not be available for shipping)</p>
+                    <p>Địa chỉ giao hàng (Hộp thư bưu điện sẽ không có sẵn để giao hàng)</p>
 
                     <div className="input_info_data">
                         <input className="inputs"
@@ -151,16 +151,16 @@ function PaySuccess({items, user}) {
                 </div>
                 <hr style={{marginLeft: 70}}/>
                 <div className="cart_total1">
-                    <p>Subtotal</p>
+                    <p>Giá sản phẩm</p>
                     <p className="cart_total1_content">${Subtotal}</p>
                 </div>
                 <div className="cart_total1">
                     <p>Shipping</p>
-                    <p className="cart_total1_content">Free</p>
+                    <p className="cart_total1_content">Miễn phí</p>
                 </div>
                 <hr style={{marginLeft: 70}}/>
                 <div className="cart_total1">
-                    <p>Total</p>
+                    <p>Tổng</p>
                     <p className="cart_total1_content">USD ${Subtotal}</p>
                 </div>
             </div>

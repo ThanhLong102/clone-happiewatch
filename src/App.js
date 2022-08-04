@@ -20,6 +20,7 @@ import UpdateItem from "./Admin/Item/UpdateItem";
 import Account from "./Admin/customer/Account";
 import Paypal from "./Page/PayPall/Paypal";
 import PaySuccess from "./Page/PayPall/PaySuccess";
+import {addResponseMessage, Widget} from "react-chat-widget";
 
 function App() {
     const [cart, setCart] = useState([]);
@@ -163,6 +164,10 @@ function App() {
         console.log(data);
         setUser(data);
     }
+    const handleNewUserMessage = (newMessage) => {
+        addResponseMessage('Welcome to this **awesome** chat!');
+    };
+
 
     return (
         <div className="App">
@@ -199,6 +204,10 @@ function App() {
                         displayMenu && <Admin
                         />
                     }
+                    <Widget
+                        handleNewUserMessage={handleNewUserMessage}
+                        title="Tư vấn khách hàng"
+                    />
                     <Switch>
                         <Route
                             path="/"
