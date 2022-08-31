@@ -1,0 +1,25 @@
+.date-form{
+    margin-left: 6%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.date-form-wrapper{
+    display: flex;
+}
+.date-form-wrapper-form{
+    margin-right: 2rem;
+}
+.chart{
+    display: flex;
+}
+.chart{
+    display: flex;
+    justify-content: space-between;
+}
+.chart-dt > canvas{
+    height: 30rem;
+    width: 55rem;
+}
+canvas{
+
+}

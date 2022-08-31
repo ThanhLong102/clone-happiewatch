@@ -11,7 +11,7 @@ function Header({handleDisplayCart,totalItems,handleDisplaySearch,handleDisplayM
     return (
         <div className="header" onClick={handleDisplay}>
             <Link to='/' style={{textDecoration: 'none', marginLeft: '20px', color: 'black'}}>
-                <h2>KIENWATCH</h2>
+                <h2>HIWWATCH</h2>
             </Link>
             <div className="header_page">
                 <Link to='/collection' style={{textDecoration: 'none' }}>

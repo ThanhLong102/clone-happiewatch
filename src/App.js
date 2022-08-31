@@ -20,7 +20,10 @@ import UpdateItem from "./Admin/Item/UpdateItem";
 import Account from "./Admin/customer/Account";
 import Paypal from "./Page/PayPall/Paypal";
 import PaySuccess from "./Page/PayPall/PaySuccess";
-import {addResponseMessage, Widget} from "react-chat-widget";
+import Chat from 'react-simple-chat';
+// Chat styles
+import 'react-simple-chat/src/components/index.css';
+import Statistical from "./Admin/statistical/Statistical";
 
 function App() {
     const [cart, setCart] = useState([]);
@@ -164,10 +167,28 @@ function App() {
         console.log(data);
         setUser(data);
     }
-    const handleNewUserMessage = () => {
-        addResponseMessage('Chào mừng bạn đến với KIENWATCH');
-    };
 
+    const [messages, setMessages] = useState([
+        {
+            id: 1,
+            text: 'Chào bạn vui được hỗ trợ bạn',
+            createdAt: '2021-07-21 12:09:12', // optional
+            user: {
+                id: 2,
+                avatar: 'https://media.istockphoto.com/vectors/cute-robot-vector-id1191411962?k=20&m=1191411962&s=612x612&w=0&h=sDV5muSvtgaWJ7rNdAcb4aLQQlIkQnQaONn47aPqSKs=' // optional
+            }
+        }
+    ]);
+
+    const messagesRepose = {
+        id: 1,
+        text: 'Hệ thống đang bận',
+        createdAt: '2021-07-21 12:09:12', // optional
+        user: {
+            id: 2,
+            avatar: 'https://media.istockphoto.com/vectors/cute-robot-vector-id1191411962?k=20&m=1191411962&s=612x612&w=0&h=sDV5muSvtgaWJ7rNdAcb4aLQQlIkQnQaONn47aPqSKs=' // optional
+        }
+    }
 
     return (
         <div className="App">
@@ -204,10 +225,14 @@ function App() {
                         displayMenu && <Admin
                         />
                     }
-                    <Widget
-                        handleNewUserMessage={handleNewUserMessage}
-                        title="Tư vấn khách hàng"
-                    />
+                    <div>
+                        <Chat
+                            title="HIWATCH"
+                            user={{id: 1}}
+                            messages={messages}
+                            onSend={message => setMessages([...messages, message,messagesRepose])}
+                        />
+                    </div>
                     <Switch>
                         <Route
                             path="/"
@@ -254,6 +279,12 @@ function App() {
                             exact
                         >
                             <ItemQl/>
+                        </Route>
+                        <Route
+                            path="/admin/statistical"
+                            exact
+                        >
+                            <Statistical/>
                         </Route>
                         <Route
                             path="/admin/account"

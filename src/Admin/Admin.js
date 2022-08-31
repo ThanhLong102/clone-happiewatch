@@ -26,6 +26,11 @@ export default function Admin() {
                         Quản lý khách hàng
                     </Button>
                 </Link>
+                <Link to='/admin/statistical' style={{textDecoration: 'none'}}>
+                    <Button type="button" variant="outlined" color="secondary">
+                        Thống kê
+                    </Button>
+                </Link>
             </div>
         </div>
 
