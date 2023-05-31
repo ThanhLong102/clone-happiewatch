@@ -24,6 +24,7 @@ import Chat from 'react-simple-chat';
 // Chat styles
 import 'react-simple-chat/src/components/index.css';
 import Statistical from "./Admin/statistical/Statistical";
+import ManageOrder from "./Page/Manage_order/ManageOrder";
 
 function App() {
     const [cart, setCart] = useState([]);
@@ -227,7 +228,7 @@ function App() {
                     }
                     <div>
                         <Chat
-                            title="HIWATCH"
+                            title="HAPPIEWATCH"
                             user={{id: 1}}
                             messages={messages}
                             onSend={message => setMessages([...messages, message,messagesRepose])}
@@ -303,6 +304,12 @@ function App() {
                             exact
                         >
                             <Upload/>
+                        </Route>
+                        <Route
+                            path="/manage/order"
+                            exact
+                        >
+                            <ManageOrder/>
                         </Route>
                         <Route
                             path="/collection/:id"

@@ -56,10 +56,10 @@
 }
 .header_items > span{
     position: absolute;
-    top: 12px;
-    right: 7%;
-    min-width: 22px;
-    min-height: 22px;
+    top: 14px;
+    right: 6.8%;
+    min-width: 15px;
+    min-height: 15px;
     text-align: center;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -67,7 +67,7 @@
     -o-border-radius: 50%;
     border-radius: 50%;
     z-index: 2;
-    font-weight: 500;
+    font-weight: 400;
     color: white;
     background-color: red;
 }

@@ -38,9 +38,9 @@ function Collection({Type}) {
 
     const getProductSorted = () => {
         return products.sort((p1,p2) =>{
-            if(sortBy === "Featured") return (p1.detail[p1.id%4].material).localeCompare(p2.detail[p1.id%4]?.material);
-            else if(sortBy === "Price,low to high") return p1.detail[p1.id%4].price-p2.detail[p1.id%4].price;
-            else if(sortBy === "Price,high to low") return p2.detail[p1.id%4].price-p1.detail[p1.id%4].price;
+            if(sortBy === "Featured") return (p1.detail[0].material).localeCompare(p2.detail[0]?.material);
+            else if(sortBy === "Price,low to high") return p1.detail[0].price-p2.detail[0].price;
+            else if(sortBy === "Price,high to low") return p2.detail[0].price-p1.detail[0].price;
             else if(sortBy === "A-Z") return p1.name.localeCompare(p2.name);
             else return p2.name.localeCompare(p1.name)
         });

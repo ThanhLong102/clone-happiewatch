@@ -11,7 +11,7 @@ function Header({handleDisplayCart,totalItems,handleDisplaySearch,handleDisplayM
     return (
         <div className="header" onClick={handleDisplay}>
             <Link to='/' style={{textDecoration: 'none', marginLeft: '20px', color: 'black'}}>
-                <h2>HIWWATCH</h2>
+                <h2>HAPPIEWATCH</h2>
             </Link>
             <div className="header_page">
                 <Link to='/collection' style={{textDecoration: 'none' }}>
@@ -23,12 +23,20 @@ function Header({handleDisplayCart,totalItems,handleDisplaySearch,handleDisplayM
                 <Link to='/blog' style={{textDecoration: 'none' }}>
                     <p className="page">Bài viết</p>
                 </Link>
+
             </div>
             <div className="header_items">
+                { login === true  ?
+                    <Link to='/manage/order' style={{ marginRight:'0.5rem'}}>
+                        <h5 style={{color:'black'}}>Quản lý đơn hàng</h5>
+                    </Link>
+                    : <div/>
+                }
                 { login === false  ? <h6 className="header_items_login"  onClick={handleDisplayLogin}>Đăng nhập</h6> : <div className="logout">
                     <h6 className="header_items_login" onClick={handleDisplayLogout} >Đăng xuất</h6>
                     <AccountCircleIcon fontSize="small" style={{marginRight:"20px",marginTop:"32px"}}/>
-                </div> }
+                </div>
+                }
                 <p>Giỏ hàng</p>
                 {totalItems>0 && <span>{totalItems}</span>}
                 <ShoppingCartOutlinedIcon className="header_item" onClick={handleDisplayCart} fontSize="small" style={{cursor:"pointer"}}/>

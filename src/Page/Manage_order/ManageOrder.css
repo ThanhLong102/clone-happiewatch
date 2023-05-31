@@ -1,0 +1,77 @@
+.upload_product >h1{
+    text-align: center;
+}
+.upload_product >button{
+    color: white;
+    font-weight: 800;
+    background-color: black;
+    padding: 20px 60px;
+    border: 1px solid black;
+    margin-left: 50%;
+}
+.form_detail{
+    border: solid 1px black;
+    margin: 30px 50px;
+    padding: 20px 40px;
+}
+.form_detail_i{
+    font-size: 14px;
+    line-height: 0.2cm;
+}
+
+.form_detail_i >input{
+    padding: 5px 200px 5px 5px;
+    font-size: 12px;
+}
+.form_detail_i>p{
+    font-weight: 600 ;
+}
+
+.form_name{
+    font-size: 16px;
+    line-height: 0.2cm;
+}
+.form_name>p{
+    font-weight: bold;
+}
+.form_name>input{
+    padding: 5px 200px 5px 5px;
+    font-size: 12px;
+}
+.form{
+    border: solid 1px black;
+    margin: 10px 50px;
+    padding: 20px 40px;
+}
+.form_detail_total{
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px black;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+.form_detail_image{
+    line-height: 0.1cm;
+    margin-right: 10%;
+}
+.form_detail_image>img{
+    height: 150px;
+}
+.form_detail_image>p{
+    font-weight: 600 ;
+}
+.form_detail_i > CloseIcon{
+    position: absolute;
+    height: 20px;
+}
+
+.form_item_order{
+    background-color: lightgray;
+    padding: 2rem;
+    border-radius: 25px;
+    width: 45rem;
+    height: 12rem;
+    align-items: center;
+    display: flex;
+}
+

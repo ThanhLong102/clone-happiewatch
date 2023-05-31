@@ -60,7 +60,9 @@ export default function Order() {
                 "code": order.code,
                 "cost": order.cost,
                 "total_product": order.total_product,
-                "customerId": order.customer.id
+                "customerId": order.customer.id,
+                "isPayed" : true,
+
             });
             const requestOptions = {
                 method: 'Put',

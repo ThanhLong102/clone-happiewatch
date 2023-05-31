@@ -7,10 +7,11 @@
     bottom: 5%;
     z-index: 100;
     background: #fff;
-    padding: 20px;
+    padding: 10px;
     color: #5f5f5f;
     font-size: 15px;
     font-weight: 400;
+    justify-content: center;
 }
 .login_info{
     text-align: center;

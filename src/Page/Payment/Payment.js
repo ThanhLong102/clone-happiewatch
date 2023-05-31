@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import './Payment.css'
 import ItemPayment from "./ItemPayment";
-
+import {toast, ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function Payment({items, user}) {
     const [data, setData] = useState(user);
@@ -14,11 +15,12 @@ function Payment({items, user}) {
     }
     const totalQuantity = getTotalQuantity();
     const code = (Math.random() + 1).toString(36).substring(7);
+    const notify = (message) => toast(message);
 
     const addOder = async () => {
         console.log(data);
         if (data.username === undefined) {
-            alert("Vui lòng đăng nhập!");
+            notify("Vui lòng đăng nhập!")
         } else {
             try {
                 const myHeaders = new Headers();
@@ -42,7 +44,7 @@ function Payment({items, user}) {
                 const responseJson = await response.json();
                 console.log({responseJson});
             } catch (e) {
-                console.log("error " + e);
+                notify("Có lỗi xảy ra")
             }
             items.map(async (item) => {
                 try {
@@ -66,7 +68,7 @@ function Payment({items, user}) {
                     const responseJson = await response.json();
                     console.log({responseJson});
                 } catch (e) {
-                    console.log("error " + e);
+                    notify("Có lỗi xảy ra")
                 }
             })
             try {
@@ -93,9 +95,9 @@ function Payment({items, user}) {
                 const responseJson = await response.json();
                 console.log({responseJson});
             } catch (e) {
-                console.log("error " + e);
+                notify("Có lỗi xảy ra")
             }
-            alert("Đăt hàng thành công");
+            notify("Đặt hàng thành công")
             // eslint-disable-next-line no-restricted-globals
             window.location.assign('/')
         }
@@ -118,6 +120,20 @@ function Payment({items, user}) {
 
     return (
         <div className="payments">
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
+            {/* Same as */}
+            <ToastContainer/>
             <div className="payment_info">
                 <img
                     src="https://cdn.shopify.com/s/files/1/0477/6699/5109/files/logo_15efec72-ad8f-44c9-81e5-e34f073de332.png?6307"
